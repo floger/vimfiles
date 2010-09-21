@@ -1,4 +1,4 @@
-== vimfiles ==
+# vimfiles
 
 The vimfiles we use at Codegram. Best vim config ever :)
 
@@ -10,6 +10,6 @@ In your home directory:
 
   sh .vim/install.sh
 
-== TODO ==
+## TODO
 
 * Cheatsheet explaining custom mappings
