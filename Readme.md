@@ -4,12 +4,71 @@ The vimfiles we use at Codegram. Best vim config ever :)
 
 Ready for VIM 7.3!
 
+##Installation
 In your home directory:
 
     git clone http://github.com/codegram/vimfiles.git .vim
 
     sh .vim/install.sh
 
-### TODO
+##Mappings
+**Use with caution: strongly opinionated config**
 
-* Cheatsheet explaining custom mappings
+###Normal mode
+* **Space** => Search, with very magic by default ("Normal" regex mode, [more info](http://vimdoc.sourceforge.net/htmldoc/pattern.html))
+* **,Space** => Clear search highlight
+* **,a** => Ack search
+* **,co** => Comment lines
+* **,v** => Splits to a new vertical split and switch to it
+* **Control + [h,j,k,l]** => move between splits
+* **Tab** => Next buffer
+* **Shift + Tab** => Previous buffer
+* **,q** => Save and close all (:wqa!)
+* **,w** => Save (:w!)
+* **,Esc** => Quit without saving (:q!)
+
+###Insert mode
+* **jj** => Back to normal mode
+
+###Visual mode
+* **,co** => Comment lines
+
+##Plugins
+* [Ack (instead of grep)](http://github.com/mileszs/ack.vim)
+* [Autocorrect](http://github.com/panozzaj/vim-autocorrect)
+* [Cucumber](http://github.com/tpope/vim-cucumber)
+* [Fugitive](http://github.com/tpope/vim-fugitive)
+* [Gist](http://www.vim.org/scripts/script.php?script_id=2423)
+* [Haml](http://github.com/tpope/vim-haml)
+* [Nerdtree](http://github.com/scrooloose/nerdtree)
+* [Pathogen](http://github.com/tpope/vim-pathogen) 
+* [Peepopen](http://peepcode.com/products/peepopen)
+* [Rails](http://github.com/tpope/vim-rails)
+* [Sparkup](http://github.com/rstacruz/sparkup)
+* [Speedating](http://github.com/tpope/vim-speeddating)
+* [Surround](http://github.com/tpope/vim-surround)
+* [Taglist](http://github.com/chrismetcalf/vim-taglist)
+* [TComment](http://github.com/tsaleh/vim-tcomment)
+* [Yankring](http://github.com/chrismetcalf/vim-yankring)
+
+##Colorschemes
+*  [af](http://www.vim.org/scripts/script.php?script_id=950)
+*  [Clouds midnight](http://forr.st/~yZn)
+*  [**molokai (default)**](http://www.vim.org/scripts/script.php?script_id=2340)
+*  [mustang](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)
+*  [oceanblack](http://www.vim.org/scripts/script.php?script_id=603)
+*  [skittles_dark](http://www.vim.org/scripts/script.php?script_id=2595)
+*  [twilight](http://www.vim.org/scripts/script.php?script_id=1677)
+
+###Some considerations
+* Leader is **,**
+* Nullified arrow keys
+* No backup files
+* Move cursor by display lines instead of physical (j => gj)
+* Autosave on lose focus
+* _ is a word separator
+* Font is Monaco 12
+
+### TODO
+* Better description
+* Document paste stuff
