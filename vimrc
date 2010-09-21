@@ -158,6 +158,9 @@ let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
 map <leader>p :NERDTreeToggle<cr>
 
+" PeepOpen
+map <leader>o <Plug>PeepOpen
+
 " TagList
 map <leader>l :TlistToggle <cr>
 let Tlist_Use_Right_Window = 1
@@ -195,4 +198,3 @@ set guifont=Monaco:h12
 if filereadable(my_home . '.vimrc.local')
   source ~/.vimrc.local
 endif
-
