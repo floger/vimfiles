@@ -4,27 +4,17 @@ The vimfiles we use at Codegram. Best vim config ever :)
 
 Ready for VIM 7.3!
 
+##Installation
 In your home directory:
 
     git clone http://github.com/codegram/vimfiles.git .vim
 
     sh .vim/install.sh
 
-## Cheatsheet
+##Mappings
 **Use with caution: strongly opinionated config**
 
-####Some considerations first
-* Leader is **,**
-* Nullified arrow keys
-* No backup files
-* Move cursor by display lines instead of physical (j => gj)
-* Autosave on lose focus
-* _ is a word separator
-* Font is Monaco 12
-
-###Mappings
-
-####Normal mode
+###Normal mode
 * &lt;space&gt; => Search, with very magic by default ("Normal" regex mode, [more info](http://vimdoc.sourceforge.net/htmldoc/pattern.html))
 * ,&lt;space&gt; => Clear search highlight
 * ,a => Ack search
@@ -37,13 +27,13 @@ In your home directory:
 * ,w => Save (:w!)
 * ,<Esc> => Quit without saving (:q!)
 
-####Insert mode
+###Insert mode
 * jj => Back to normal mode
 
-####Visual mode
+###Visual mode
 * ,co => Comment lines
 
-###Plugins
+##Plugins
 * [Pathogen](http://github.com/mileszs/ack.vim) 
 * [Ack (instead of grep)](http://github.com/tpope/vim-fugitive)
 * [Autocorrect](http://github.com/tsaleh/vim-tcomment)
@@ -60,16 +50,24 @@ In your home directory:
 * [TComment](http://www.vim.org/scripts/script.php?script_id=2423)
 * [Yankring](http://github.com/chrismetcalf/vim-yankring)
 
-####Colorschemes
-*  af
-*  clouds_midnight
-*  **molokai (default)**
-*  mustang
-*  oceanblack
-*  skittles_dark
-*  twilight
+##Colorschemes
+*  [af](http://www.vim.org/scripts/script.php?script_id=950)
+*  [Clouds midnight](http://forr.st/~yZn)
+*  [**molokai (default)**](http://www.vim.org/scripts/script.php?script_id=2340)
+*  [mustang](http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484)
+*  [oceanblack](http://www.vim.org/scripts/script.php?script_id=603)
+*  [skittles_dark](http://www.vim.org/scripts/script.php?script_id=2595)
+*  [twilight](http://www.vim.org/scripts/script.php?script_id=1677)
+
+###Some considerations
+* Leader is **,**
+* Nullified arrow keys
+* No backup files
+* Move cursor by display lines instead of physical (j => gj)
+* Autosave on lose focus
+* _ is a word separator
+* Font is Monaco 12
 
 ### TODO
-
 * Better description
 * Document paste stuff
