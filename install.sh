@@ -1,5 +1,6 @@
 cd ~/.vim
 echo "Updating plug-ins..."
+mkdir -p bundle
 ruby update_bundles
 
 echo "Installing vimfiles..."
