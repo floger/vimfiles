@@ -15,23 +15,23 @@ In your home directory:
 **Use with caution: strongly opinionated config**
 
 ###Normal mode
-* &lt;space&gt; => Search, with very magic by default ("Normal" regex mode, [more info](http://vimdoc.sourceforge.net/htmldoc/pattern.html))
-* ,&lt;space&gt; => Clear search highlight
-* ,a => Ack search
-* ,co => Comment lines
-* ,v => Splits to a new vertical split and switch to it
-* Control + [h,j,k,l] => move between splits
-* Tab => Next buffer
-* Shift+Tab => Previous buffer
-* ,q => Save and close all (:wqa!)
-* ,w => Save (:w!)
-* ,<Esc> => Quit without saving (:q!)
+* **&lt;space&gt;** => Search, with very magic by default ("Normal" regex mode, [more info](http://vimdoc.sourceforge.net/htmldoc/pattern.html))
+* **,&lt;space&gt;** => Clear search highlight
+* **,a** => Ack search
+* **,co** => Comment lines
+* **,v** => Splits to a new vertical split and switch to it
+* **Control + [h,j,k,l]** => move between splits
+* **Tab** => Next buffer
+* **Shift+Tab** => Previous buffer
+* **,q** => Save and close all (:wqa!)
+* **,w** => Save (:w!)
+* **,<Esc>** => Quit without saving (:q!)
 
 ###Insert mode
-* jj => Back to normal mode
+* **jj** => Back to normal mode
 
 ###Visual mode
-* ,co => Comment lines
+* **,co** => Comment lines
 
 ##Plugins
 * [Ack (instead of grep)](http://github.com/mileszs/ack.vim)
@@ -42,7 +42,7 @@ In your home directory:
 * [Haml](http://github.com/tpope/vim-haml)
 * [Nerdtree](http://github.com/scrooloose/nerdtree)
 * [Pathogen](http://github.com/tpope/vim-pathogen) 
-* [Peepopen] (http://peepcode.com/products/peepopen)
+* [Peepopen](http://peepcode.com/products/peepopen)
 * [Rails](http://github.com/tpope/vim-rails)
 * [Sparkup](http://github.com/rstacruz/sparkup)
 * [Speedating](http://github.com/tpope/vim-speeddating)
