@@ -14,7 +14,6 @@ set expandtab
 
 " Fancy things in 7.3
 
-set nobackup
 set title
 set encoding=utf-8
 set scrolloff=3
@@ -203,3 +202,8 @@ set guifont=Monaco:h12
 if filereadable(my_home . '.vimrc.local')
   source ~/.vimrc.local
 endif
+
+" NOW SERIOUSLY
+set nobackup
+set nowritebackup
+set noswapfile
