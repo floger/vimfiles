@@ -34,20 +34,21 @@ In your home directory:
 * ,co => Comment lines
 
 ##Plugins
-* [Pathogen](http://github.com/mileszs/ack.vim) 
-* [Ack (instead of grep)](http://github.com/tpope/vim-fugitive)
-* [Autocorrect](http://github.com/tsaleh/vim-tcomment)
+* [Ack (instead of grep)](http://github.com/mileszs/ack.vim)
+* [Autocorrect](http://github.com/panozzaj/vim-autocorrect)
 * [Cucumber](http://github.com/tpope/vim-cucumber)
 * [Fugitive](http://github.com/tpope/vim-fugitive)
+* [Gist](http://www.vim.org/scripts/script.php?script_id=2423)
 * [Haml](http://github.com/tpope/vim-haml)
-* [Nerdtree](http://github.com/rstacruz/sparkup)
-* [Peepopen]support (http://github.com/scrooloose/nerdtree)
+* [Nerdtree](http://github.com/scrooloose/nerdtree)
+* [Pathogen](http://github.com/tpope/vim-pathogen) 
+* [Peepopen] (http://peepcode.com/products/peepopen)
 * [Rails](http://github.com/tpope/vim-rails)
-* [Sparkup](http://github.com/panozzaj/vim-autocorrect)
+* [Sparkup](http://github.com/rstacruz/sparkup)
 * [Speedating](http://github.com/tpope/vim-speeddating)
 * [Surround](http://github.com/tpope/vim-surround)
 * [Taglist](http://github.com/chrismetcalf/vim-taglist)
-* [TComment](http://www.vim.org/scripts/script.php?script_id=2423)
+* [TComment](http://github.com/tsaleh/vim-tcomment)
 * [Yankring](http://github.com/chrismetcalf/vim-yankring)
 
 ##Colorschemes
