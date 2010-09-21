@@ -88,6 +88,9 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
+
+" inoremap <Esc> <nop>
+
 nnoremap j gj
 nnoremap k gk
 
@@ -179,6 +182,8 @@ endif
 " colorscheme oceanblack
 " colorscheme skittles_dark
 " colorscheme twilight
+" colorscheme mustang
+" colorscheme clouds_midnight
 colorscheme molokai
 
 " GUI "
