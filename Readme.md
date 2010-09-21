@@ -20,6 +20,7 @@ In your home directory:
 * Move cursor by display lines instead of physical (j => gj)
 * Autosave on lose focus
 * _ is a word separator
+* Font is Monaco 12
 
 ###Mappings
 
@@ -43,20 +44,21 @@ In your home directory:
 * ,co => Comment lines
 
 ###Plugins
-* Ack instead of grep
-* Fugitive
-* Rails
-* Surround
-* Haml
-* Cucumber
-* Speedating
-* Yankring
-* Taglist
-* Peepopen support
-* Nerdtree
-* Sparkup
-* Autocorrect
-* TComment
+* [Pathogen](http://github.com/mileszs/ack.vim) 
+* [Ack (instead of grep)](http://github.com/tpope/vim-fugitive)
+* [Autocorrect](http://github.com/tsaleh/vim-tcomment)
+* [Cucumber](http://github.com/tpope/vim-cucumber)
+* [Fugitive](http://github.com/tpope/vim-fugitive)
+* [Haml](http://github.com/tpope/vim-haml)
+* [Nerdtree](http://github.com/rstacruz/sparkup)
+* [Peepopen]support (http://github.com/scrooloose/nerdtree)
+* [Rails](http://github.com/tpope/vim-rails)
+* [Sparkup](http://github.com/panozzaj/vim-autocorrect)
+* [Speedating](http://github.com/tpope/vim-speeddating)
+* [Surround](http://github.com/tpope/vim-surround)
+* [Taglist](http://github.com/chrismetcalf/vim-taglist)
+* [TComment](http://www.vim.org/scripts/script.php?script_id=2423)
+* [Yankring](http://github.com/chrismetcalf/vim-yankring)
 
 ####Colorschemes
 *  af
