@@ -15,17 +15,17 @@ In your home directory:
 **Use with caution: strongly opinionated config**
 
 ###Normal mode
-* **&lt;space&gt;** => Search, with very magic by default ("Normal" regex mode, [more info](http://vimdoc.sourceforge.net/htmldoc/pattern.html))
-* **,&lt;space&gt;** => Clear search highlight
+* **Space** => Search, with very magic by default ("Normal" regex mode, [more info](http://vimdoc.sourceforge.net/htmldoc/pattern.html))
+* **,Space** => Clear search highlight
 * **,a** => Ack search
 * **,co** => Comment lines
 * **,v** => Splits to a new vertical split and switch to it
 * **Control + [h,j,k,l]** => move between splits
 * **Tab** => Next buffer
-* **Shift+Tab** => Previous buffer
+* **Shift + Tab** => Previous buffer
 * **,q** => Save and close all (:wqa!)
 * **,w** => Save (:w!)
-* **,<Esc>** => Quit without saving (:q!)
+* **,Esc** => Quit without saving (:q!)
 
 ###Insert mode
 * **jj** => Back to normal mode
