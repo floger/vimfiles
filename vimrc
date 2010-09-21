@@ -72,8 +72,8 @@ nnoremap <leader><space> :noh<cr>
 " Handle long lines correctly
 set wrap
 set textwidth=79
-set formatoptions=qrn1
-set colorcolumn=80
+" set formatoptions=n
+" set colorcolumn=80
 
 " Show invisible characters
 " set list
@@ -146,17 +146,6 @@ set pastetoggle=<F2>
 map <C-v> "+gP<CR>
 vmap <C-c> "+y
 
-" GUI "
-if has("gui_running")
-  set guioptions-=T " no toolbar set guioptions-=m " no menus
-  set guioptions-=r " no scrollbar on the right
-  set guioptions-=R " no scrollbar on the right
-  set guioptions-=l " no scrollbar on the left
-  set guioptions-=b " no scrollbar on the bottom
-  set guioptions=aiA 
-  set mouse=v
-endif
-
 " PLUGINS "
 
 " Load all bundles in .vim/bundles
@@ -177,13 +166,33 @@ let Tlist_Use_Right_Window = 1
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
 let g:AutoCloseProtectedRegions = ["Character"] 
 
-
-" Finally, load custom configs
 let my_home = expand("$HOME/")
-if filereadable(my_home . '.vimrc.local')
-  source ~/.vimrc.local
-endif
 
 if filereadable(my_home . '.vim/bundle/vim-autocorrect/autocorrect.vim')
   source ~/.vim/bundle/vim-autocorrect/autocorrect.vim
 endif
+
+" colorscheme af
+" colorscheme oceanblack
+" colorscheme skittles_dark
+" colorscheme twilight
+colorscheme molokai
+
+" GUI "
+if has("gui_running")
+  set guioptions-=T " no toolbar set guioptions-=m " no menus
+  set guioptions-=r " no scrollbar on the right
+  set guioptions-=R " no scrollbar on the right
+  set guioptions-=l " no scrollbar on the left
+  set guioptions-=b " no scrollbar on the bottom
+  set guioptions=aiA 
+  set mouse=v
+  set guifont=Monaco:h12
+endif
+set guifont=Monaco:h12
+
+" Finally, load custom configs
+if filereadable(my_home . '.vimrc.local')
+  source ~/.vimrc.local
+endif
+

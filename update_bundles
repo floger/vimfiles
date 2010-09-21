@@ -15,9 +15,9 @@ git_bundles = [
 
   "git://github.com/panozzaj/vim-autocorrect.git",
 
-  "git://github.com/tsaleh/vim-tcomment.git",
+  "git://github.com/tsaleh/vim-tcomment.git"
 
-  "git://github.com/msanders/snipmate.vim.git"
+  # "git://github.com/msanders/snipmate.vim.git"  Oriol does not like it
 ]
 
 vim_org_scripts = [
