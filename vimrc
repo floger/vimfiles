@@ -18,6 +18,7 @@ set title
 set encoding=utf-8
 set scrolloff=3
 set autoindent
+set smartindent
 set showmode
 set showcmd
 set hidden
@@ -158,6 +159,7 @@ let NERDTreeShowBookmarks = 1
 let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
+let NERDTreeQuitOnOpen = 1
 map <leader>p :NERDTreeToggle<cr>
 
 " PeepOpen
