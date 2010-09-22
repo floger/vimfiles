@@ -198,7 +198,7 @@ if has("gui_running")
   set mouse=v
 " set guifont=Monaco:h12 <- Maybe a good idea when using mac
 endif
-set guifont=Monaco:h12
+"set guifont=Monaco:h12
 
 " Finally, load custom configs
 if filereadable(my_home . '.vimrc.local')
