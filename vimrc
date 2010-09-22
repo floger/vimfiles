@@ -209,3 +209,4 @@ endif
 set nobackup
 set nowritebackup
 set noswapfile
+syntax on
