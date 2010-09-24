@@ -22,7 +22,8 @@ git_bundles = [
 ]
 
 vim_org_scripts = [
-  ["gist",          "13427", "plugin"]
+  ["gist","13427", "plugin"],
+  ["LustyJuggler","2050", "plugin"]
 ]
 
 require 'fileutils'
