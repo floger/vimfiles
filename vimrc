@@ -169,6 +169,9 @@ map <leader>o <Plug>PeepOpen
 map <leader>l :TlistToggle <cr>
 let Tlist_Use_Right_Window = 1
 
+" LustyJugler
+nmap <silent> <leader>b :LustyJuggler<CR>
+
 " AutoClose
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
 let g:AutoCloseProtectedRegions = ["Character"] 

@@ -17,8 +17,6 @@ In your home directory:
 ###Normal mode
 * **Space** => Search, with very magic by default ("Normal" regex mode, [more info](http://vimdoc.sourceforge.net/htmldoc/pattern.html))
 * **,Space** => Clear search highlight
-* **,a** => Ack search
-* **,co** => Comment lines
 * **,v** => Splits to a new vertical split and switch to it
 * **Control + [h,j,k,l]** => move between splits
 * **Tab** => Next buffer
@@ -30,8 +28,14 @@ In your home directory:
 ###Insert mode
 * **jj** => Back to normal mode
 
-###Visual mode
+###Plugins related
+* **,a** => Ack search
+* **Control + [n,p]** => Rotate Ack results
 * **,co** => Comment lines
+* **,b** => Buffer list. Select buffer with 1, 2, 3...
+* **,l** => Tag list
+* **,o** => PeepOpen
+* **,p** => Nerd tree
 
 ##Plugins
 * [Ack (instead of grep)](http://github.com/mileszs/ack.vim)
@@ -51,6 +55,7 @@ In your home directory:
 * [Taglist](http://github.com/chrismetcalf/vim-taglist)
 * [TComment](http://github.com/tsaleh/vim-tcomment)
 * [Yankring](http://github.com/chrismetcalf/vim-yankring)
+
 
 ##Colorschemes
 *  [af](http://www.vim.org/scripts/script.php?script_id=950)
