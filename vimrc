@@ -14,11 +14,11 @@ set expandtab
 
 " Fancy things in 7.3
 
-set nobackup
 set title
 set encoding=utf-8
 set scrolloff=3
 set autoindent
+set smartindent
 set showmode
 set showcmd
 set hidden
@@ -159,6 +159,7 @@ let NERDTreeShowBookmarks = 1
 let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
+let NERDTreeQuitOnOpen = 1
 map <leader>p :NERDTreeToggle<cr>
 
 " PeepOpen
@@ -195,11 +196,17 @@ if has("gui_running")
   set guioptions-=b " no scrollbar on the bottom
   set guioptions=aiA 
   set mouse=v
-  set guifont=Monaco:h12
+" set guifont=Monaco:h12 <- Maybe a good idea when using mac
 endif
-set guifont=Monaco:h12
+"set guifont=Monaco:h12
 
 " Finally, load custom configs
 if filereadable(my_home . '.vimrc.local')
   source ~/.vimrc.local
 endif
+
+" NOW SERIOUSLY
+set nobackup
+set nowritebackup
+set noswapfile
+syntax on
