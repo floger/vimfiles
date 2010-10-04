@@ -24,6 +24,7 @@ In your home directory:
 * **,q** => Save and close all (:wqa!)
 * **,w** => Save (:w!)
 * **,Esc** => Quit without saving (:q!)
+* **F4** => Toggle Numberlock mode (Numbers mapped to !"·$%&/()...)
 
 ###Insert mode
 * **jj** => Back to normal mode
