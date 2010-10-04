@@ -47,6 +47,7 @@ In your home directory:
 * [Haml](http://github.com/tpope/vim-haml)
 * [LustyJuggler](http://www.vim.org/scripts/script.php?script_id=2050)
 * [Nerdtree](http://github.com/scrooloose/nerdtree)
+* [Numberlock](http://github.com/codegram/vim-numberlock)
 * [Pathogen](http://github.com/tpope/vim-pathogen) 
 * [Peepopen](http://peepcode.com/products/peepopen)
 * [Rails](http://github.com/tpope/vim-rails)
@@ -55,6 +56,7 @@ In your home directory:
 * [Surround](http://github.com/tpope/vim-surround)
 * [Taglist](http://github.com/chrismetcalf/vim-taglist)
 * [TComment](http://github.com/tsaleh/vim-tcomment)
+* [Todo](http://github.com/codegram/vim-todo)
 * [Yankring](http://github.com/chrismetcalf/vim-yankring)
 
 
