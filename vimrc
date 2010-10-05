@@ -160,6 +160,7 @@ let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
 let NERDTreeQuitOnOpen = 1
+let NERDTreeWinSize = 50 
 map <leader>p :NERDTreeToggle<cr>
 
 " PeepOpen
