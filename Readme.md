@@ -40,6 +40,7 @@ In your home directory:
 
 ##Plugins
 * [Ack (instead of grep)](http://github.com/mileszs/ack.vim)
+* [Autoclose](http://github.com/Townk/vim-autoclose)
 * [Autocorrect](http://github.com/panozzaj/vim-autocorrect)
 * [Cucumber](http://github.com/tpope/vim-cucumber)
 * [Fugitive](http://github.com/tpope/vim-fugitive)
