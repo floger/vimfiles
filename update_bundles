@@ -17,6 +17,8 @@ git_bundles = [
   "git://github.com/codegram/vim-numberlock.git",
 
   # "git://github.com/mileszs/apidock.vim.git",
+  
+  "git://github.com/Townk/vim-autoclose.git",
 
   "git://github.com/scrooloose/nerdtree.git",
   "git://github.com/rstacruz/sparkup.git",
