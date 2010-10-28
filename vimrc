@@ -171,7 +171,7 @@ map <leader>l :TlistToggle <cr>
 let Tlist_Use_Right_Window = 1
 
 " Buffger window
-nmap <silent> <leader>b :BufExplorer<CR>
+nmap <silent> <leader>b :FufBuffer<CR>
 
 " AutoClose
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 

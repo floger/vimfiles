@@ -29,11 +29,14 @@ git_bundles = [
 
   "git://github.com/msanders/snipmate.vim.git",
 
-  "git://github.com/markabe/bufexplorer.git"
+  "git://github.com/shemerey/vim-peepopen.git",
+
+  "git://github.com/clones/vim-fuzzyfinder.git"
 ]
 
 vim_org_scripts = [
-  ["gist","13427", "plugin"]
+  ["gist","13427", "plugin"],
+  ["L9","13948","zip"]
 ]
 
 require 'fileutils'
@@ -55,9 +58,18 @@ end
 
 vim_org_scripts.each do |name, script_id, script_type|
   puts "  Downloading #{name}"
-  local_file = File.join(name, script_type, "#{name}.vim")
+  if script_type == 'zip'
+    local_file = File.join(name, "#{name}.zip")
+  else
+    local_file = File.join(name, script_type, "#{name}.vim")
+  end
   FileUtils.mkdir_p(File.dirname(local_file))
   File.open(local_file, "w") do |file|
     file << open("http://www.vim.org/scripts/download_script.php?src_id=#{script_id}").read
+  end
+  if script_type == "zip"
+    FileUtils.cd(File.dirname(local_file))
+    system("unzip #{name}.zip")
+    system("rm #{name}.zip")
   end
 end
