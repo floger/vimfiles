@@ -27,12 +27,13 @@ git_bundles = [
 
   "git://github.com/tsaleh/vim-tcomment.git",
 
-  "git://github.com/msanders/snipmate.vim.git"
+  "git://github.com/msanders/snipmate.vim.git",
+
+  "git://github.com/markabe/bufexplorer.git"
 ]
 
 vim_org_scripts = [
-  ["gist","13427", "plugin"],
-  ["LustyJuggler","13094", "plugin"]
+  ["gist","13427", "plugin"]
 ]
 
 require 'fileutils'

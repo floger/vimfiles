@@ -33,7 +33,7 @@ In your home directory:
 * **,a** => Ack search
 * **Control + [n,p]** => Rotate Ack results
 * **,co** => Comment lines
-* **,b** => Buffer list. Select buffer with 1, 2, 3...
+* **,b** => Buffer window. Select buffer with h,j,k,l. Enter opens selected buffer, shift-enter or t opens buffer in new tab
 * **,l** => Tag list
 * **,o** => PeepOpen
 * **,p** => Nerd tree
@@ -42,12 +42,12 @@ In your home directory:
 * [Ack (instead of grep)](http://github.com/mileszs/ack.vim)
 * [Autoclose](http://github.com/Townk/vim-autoclose)
 * [Autocorrect](http://github.com/panozzaj/vim-autocorrect)
+* [Bufexplorer](http://www.vim.org/scripts/script.php?script_id=42)
 * [Cucumber](http://github.com/tpope/vim-cucumber)
 * [Endwise](http://github.com/tpope/vim-endwise.git)
 * [Fugitive](http://github.com/tpope/vim-fugitive)
 * [Gist](http://www.vim.org/scripts/script.php?script_id=2423)
 * [Haml](http://github.com/tpope/vim-haml)
-* [LustyJuggler](http://www.vim.org/scripts/script.php?script_id=2050)
 * [Nerdtree](http://github.com/scrooloose/nerdtree)
 * [Numberlock](http://github.com/codegram/vim-numberlock)
 * [Pathogen](http://github.com/tpope/vim-pathogen) 
