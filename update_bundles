@@ -10,6 +10,8 @@ git_bundles = [
   "git://github.com/tpope/vim-speeddating",
   "git://github.com/chrismetcalf/vim-yankring.git",
   "git://github.com/chrismetcalf/vim-taglist.git",
+  "git://github.com/tpope/vim-endwise.git",
+  "git://github.com/scrooloose/syntastic.git",
 
   "git://github.com/codegram/vim-todo.git",
   "git://github.com/codegram/vim-numberlock.git",
@@ -21,9 +23,9 @@ git_bundles = [
 
   "git://github.com/panozzaj/vim-autocorrect.git",
 
-  "git://github.com/tsaleh/vim-tcomment.git"
+  "git://github.com/tsaleh/vim-tcomment.git",
 
-  # "git://github.com/msanders/snipmate.vim.git"  Oriol does not like it
+  "git://github.com/msanders/snipmate.vim.git"
 ]
 
 vim_org_scripts = [
