@@ -25,6 +25,7 @@ In your home directory:
 * **,w** => Save (:w!)
 * **,Esc** => Quit without saving (:q!)
 * **F4** => Toggle Numberlock mode (Numbers mapped to !"·$%&/()...)
+* **Shift + r** => Execute current buffer as ruby
 
 ###Insert mode
 * **jj** => Back to normal mode

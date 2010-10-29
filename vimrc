@@ -48,7 +48,7 @@ set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v][%{fugitive#statusline()}]
 "              | | | +-- help flag in square brackets
 "              | | +-- readonly flag in square brackets
 "              | +-- rodified flag in square brackets
-"              +-- full path to file in the buffer
+"              +-- full path to file in the rbuffer
 "} 
 
 " <leader> key
@@ -170,12 +170,15 @@ map <leader>o <Plug>PeepOpen
 map <leader>l :TlistToggle <cr>
 let Tlist_Use_Right_Window = 1
 
-" Buffger window
+" Buffer window
 nmap <silent> <leader>b :FufBuffer<CR>
 
 " AutoClose
 let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
 let g:AutoCloseProtectedRegions = ["Character"] 
+
+" Execute current buffer as ruby
+map <S-r> :w !ruby<CR>
 
 let my_home = expand("$HOME/")
 
