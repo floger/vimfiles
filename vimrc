@@ -140,6 +140,9 @@ nmap <leader><Esc> :q!<CR>
 
 " Set the tag file search order
 set tags=./tags;
+let Tlist_WinWidth = 60
+" Use only current file to autocomplete from tags
+set complete=.,t
   
 " Use _ as a word-separator
 set iskeyword-=_
@@ -218,3 +221,5 @@ set nowritebackup
 set noswapfile
 syntax on
 
+" BLAAAME
+vmap <Leader>gb :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>

@@ -36,7 +36,8 @@ git_bundles = [
 
 vim_org_scripts = [
   ["gist","13427", "plugin"],
-  ["L9","13948","zip"]
+  ["L9","13948","zip"],
+  ["githublink","https://github.com/tenderlove/dot_vim/raw/master/plugin/githublink.vim","blob"]
 ]
 
 require 'fileutils'
@@ -58,6 +59,18 @@ end
 
 vim_org_scripts.each do |name, script_id, script_type|
   puts "  Downloading #{name}"
+  if script_type == 'blob'
+    local_file = File.join(name, "plugin", "#{name}.vim")
+    FileUtils.mkdir_p(File.dirname(local_file))
+    puts "Created #{local_file}"
+    a = File.open(local_file, "w") do |file|
+      file << open(script_id).read
+      puts local_file
+      puts file.inspect
+    end
+    puts a.inspect
+    next  
+  end
   if script_type == 'zip'
     local_file = File.join(name, "#{name}.zip")
   else
@@ -71,5 +84,6 @@ vim_org_scripts.each do |name, script_id, script_type|
     FileUtils.cd(File.dirname(local_file))
     system("unzip #{name}.zip")
     system("rm #{name}.zip")
+    FileUtils.cd('..')
   end
 end

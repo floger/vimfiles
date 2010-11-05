@@ -27,6 +27,10 @@ In your home directory:
 * **F4** => Toggle Numberlock mode (Numbers mapped to !"·$%&/()...)
 * **Shift + r** => Execute current buffer as ruby
 
+###Visual mode
+* **,g** => git blame
+* **,h** => get a link in the clipboard referencing the selected lines in Github
+
 ###Insert mode
 * **jj** => Back to normal mode
 
