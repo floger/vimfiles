@@ -98,9 +98,6 @@ nnoremap k gk
 imap jj <ESC>
 nnoremap ; :
 
-" Save on losing focus
-au FocusLost * :wa
-
 " ACK
 " Use Ack instead of grep
 set grepprg=ack
