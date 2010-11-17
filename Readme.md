@@ -26,6 +26,8 @@ In your home directory:
 * **,Esc** => Quit without saving (:q!)
 * **F4** => Toggle Numberlock mode (Numbers mapped to !"·$%&/()...)
 * **Shift + r** => Execute current buffer as ruby
+* **,d** => Delete current buffer (bd)
+* **,D** => Delete all buffers
 
 ###Insert mode
 * **jj** => Back to normal mode

@@ -130,6 +130,7 @@ nnoremap <C-l> <C-w>l
 noremap <tab> :bn<CR>
 noremap <S-tab> :bp<CR>
 nmap <leader>d :bd<CR>
+nmap <leader>D :bufdo bd<CR>
 
 " Saving and buffer stuff
 " :wqa! Quit saving
