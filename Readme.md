@@ -29,6 +29,10 @@ In your home directory:
 * **,d** => Delete current buffer (bd)
 * **,D** => Delete all buffers
 
+###Visual mode
+* **,g** => git blame
+* **,h** => get a link in the clipboard referencing the selected lines in Github
+
 ###Insert mode
 * **jj** => Back to normal mode
 
