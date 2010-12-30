@@ -27,8 +27,6 @@ git_bundles = [
 
   "git://github.com/tsaleh/vim-tcomment.git",
 
-  "git://github.com/msanders/snipmate.vim.git",
-
   "git://github.com/shemerey/vim-peepopen.git",
 
   "git://github.com/clones/vim-fuzzyfinder.git"
