@@ -38,6 +38,9 @@ In your home directory:
 
 ###Plugins related
 * **,a** => Ack search
+* **,a|** => Align Cucumber Tables
+* **,a=** => Align lines with =
+* **,a:** => Align lines with :
 * **Control + [n,p]** => Rotate Ack results
 * **,co** => Comment lines
 * **,b** => Fuzzy buffer explorer
@@ -65,6 +68,7 @@ In your home directory:
 * [Speedating](http://github.com/tpope/vim-speeddating)
 * [Surround](http://github.com/tpope/vim-surround)
 * [Syntastic](http://github.com/scrooloose/syntastic.git)
+* [Tabular](https://github.com/godlygeek/tabular)
 * [Taglist](http://github.com/chrismetcalf/vim-taglist)
 * [TComment](http://github.com/tsaleh/vim-tcomment)
 * [Todo](http://github.com/codegram/vim-todo)

@@ -71,7 +71,7 @@ nnoremap <leader><space> :noh<cr>
 
 " Handle long lines correctly
 set wrap
-set textwidth=79
+" set textwidth=79
 " set formatoptions=n
 " set colorcolumn=80
 
@@ -204,9 +204,9 @@ if has("gui_running")
   set guioptions-=b " no scrollbar on the bottom
   set guioptions=aiA 
   set mouse=v
-" set guifont=Monaco:h12 <- Maybe a good idea when using mac
+  set guifont=Monaco:h12 "<- Maybe a good idea when using mac
 endif
-"set guifont=Monaco:h12
+set guifont=Monaco:h12
 
 " Finally, load custom configs
 if filereadable(my_home . '.vimrc.local')
@@ -221,3 +221,13 @@ syntax on
 
 " BLAAAME
 vmap <Leader>gb :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p<CR>
+
+" Tabularize
+if exists(":Tab")
+  nmap <leader>a\| :Tab /\|<CR>
+  vmap <leader>a\| :Tab /\|<CR>
+  nmap <leader>a= :Tab /=<CR>
+  vmap <leader>a= :Tab /=<CR>
+  nmap <leader>a: :Tab /:\zs<CR>
+  vmap <leader>a: :Tab /:\zs<CR>
+endif
