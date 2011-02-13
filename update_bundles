@@ -33,7 +33,7 @@ git_bundles = [
 
   "git://github.com/godlygeek/tabular.git",
 
-  "git://github.com/fousa/vim-flog.git",
+  # "git://github.com/fousa/vim-flog.git",
 
   "git://github.com/vim-scripts/L9.git",
 

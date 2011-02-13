@@ -231,5 +231,3 @@ if exists(":Tab")
   nmap <leader>a: :Tab /:\zs<CR>
   vmap <leader>a: :Tab /:\zs<CR>
 endif
-
-silent exe "g:flog_enable"
