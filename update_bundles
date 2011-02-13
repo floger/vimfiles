@@ -31,12 +31,16 @@ git_bundles = [
 
   "git://github.com/clones/vim-fuzzyfinder.git",
 
-  "git://github.com/godlygeek/tabular.git"
+  "git://github.com/godlygeek/tabular.git",
+
+  "git://github.com/fousa/vim-flog.git",
+
+  "git://github.com/vim-scripts/L9.git",
+
+  "git://github.com/vim-scripts/Gist.vim.git"
 ]
 
 vim_org_scripts = [
-  ["gist","13427", "plugin"],
-  ["L9","13948","zip"],
   ["githublink","https://github.com/tenderlove/dot_vim/raw/master/plugin/githublink.vim","blob"]
 ]
 
