@@ -197,7 +197,6 @@ if has("gui_running")
   set mouse=v
   set guifont=DejaVu\ Sans\ Mono\ 14 "<- Maybe a good idea when using mac
 endif
-set guifont=DejaVu\ Sans\ Mono\ 14
 
 set nobackup
 set nowritebackup
