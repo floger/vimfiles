@@ -17,8 +17,6 @@ git_bundles = [
   "git://github.com/codegram/vim-todo.git",
   "git://github.com/codegram/vim-numberlock.git",
 
-  # "git://github.com/mileszs/apidock.vim.git",
-  
   "git://github.com/Townk/vim-autoclose.git",
 
   "git://github.com/scrooloose/nerdtree.git",
@@ -33,12 +31,12 @@ git_bundles = [
   "git://github.com/clones/vim-fuzzyfinder.git",
 
   "git://github.com/godlygeek/tabular.git",
-  'git://github.com/skammer/vim-css-color.git'
+  'git://github.com/skammer/vim-css-color.git',
+  "git://github.com/vim-scripts/Gist.vim.git",
+  "git://github.com/vim-scripts/L9.git"
 ]
 
 vim_org_scripts = [
-  ["gist","13427", "plugin"],
-  ["L9","13948","zip"],
   ["githublink","https://github.com/tenderlove/dot_vim/raw/master/plugin/githublink.vim","blob"]
 ]
 
