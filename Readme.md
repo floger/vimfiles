@@ -7,7 +7,7 @@ Ready for VIM 7.3!
 ##Installation
 In your home directory:
 
-    git clone http://github.com/codegram/vimfiles.git .vim
+    git clone https://github.com/codegram/vimfiles.git .vim
 
     sh .vim/install.sh
 
@@ -49,30 +49,32 @@ In your home directory:
 * **,p** => Nerd tree
 
 ##Plugins
-* [Ack (instead of grep)](http://github.com/mileszs/ack.vim)
-* [Autoclose](http://github.com/Townk/vim-autoclose)
-* [Autocorrect](http://github.com/panozzaj/vim-autocorrect)
-* [Cucumber](http://github.com/tpope/vim-cucumber)
-* [Endwise](http://github.com/tpope/vim-endwise.git)
-* [Fugitive](http://github.com/tpope/vim-fugitive)
-* [FuzzyFinder](http://github.com/clones/vim-fuzzyfinder)
+* [Ack (instead of grep)](https://github.com/mileszs/ack.vim)
+* [Autoclose](https://github.com/Townk/vim-autoclose)
+* [Autocorrect](https://github.com/panozzaj/vim-autocorrect)
+* [CSS Color](https://github.com/skammer/vim-css-color)
+* [Cucumber](https://github.com/tpope/vim-cucumber)
+* [Endwise](https://github.com/tpope/vim-endwise.git)
+* [Fugitive](https://github.com/tpope/vim-fugitive)
+* [FuzzyFinder](https://github.com/clones/vim-fuzzyfinder)
 * [Gist](http://www.vim.org/scripts/script.php?script_id=2423)
-* [Haml](http://github.com/tpope/vim-haml)
-* [Nerdtree](http://github.com/scrooloose/nerdtree)
-* [Numberlock](http://github.com/codegram/vim-numberlock)
-* [Pathogen](http://github.com/tpope/vim-pathogen) 
+* [Haml](https://github.com/tpope/vim-haml)
+* [Markdown syntax](https://github.com/plasticboy/vim-markdown)
+* [Nerdtree](https://github.com/scrooloose/nerdtree)
+* [Numberlock](https://github.com/codegram/vim-numberlock)
+* [Pathogen](https://github.com/tpope/vim-pathogen) 
 * [Peepopen](http://peepcode.com/products/peepopen)
-* [Rails](http://github.com/tpope/vim-rails)
-* [Snipmate](http://github.com/msanders/snipmate.vim)
-* [Sparkup](http://github.com/rstacruz/sparkup)
-* [Speedating](http://github.com/tpope/vim-speeddating)
-* [Surround](http://github.com/tpope/vim-surround)
-* [Syntastic](http://github.com/scrooloose/syntastic.git)
+* [Rails](https://github.com/tpope/vim-rails)
+* [Snipmate](https://github.com/msanders/snipmate.vim)
+* [Sparkup](https://github.com/rstacruz/sparkup)
+* [Speedating](https://github.com/tpope/vim-speeddating)
+* [Surround](https://github.com/tpope/vim-surround)
+* [Syntastic](https://github.com/scrooloose/syntastic.git)
 * [Tabular](https://github.com/godlygeek/tabular)
-* [Taglist](http://github.com/chrismetcalf/vim-taglist)
-* [TComment](http://github.com/tsaleh/vim-tcomment)
-* [Todo](http://github.com/codegram/vim-todo)
-* [Yankring](http://github.com/chrismetcalf/vim-yankring)
+* [Taglist](https://github.com/chrismetcalf/vim-taglist)
+* [TComment](https://github.com/tsaleh/vim-tcomment)
+* [Todo](https://github.com/codegram/vim-todo)
+* [Yankring](https://github.com/chrismetcalf/vim-yankring)
 
 
 ##Colorschemes

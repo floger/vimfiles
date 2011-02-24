@@ -8,6 +8,7 @@ git_bundles = [
   "git://github.com/tpope/vim-haml.git",
   "git://github.com/tpope/vim-cucumber.git",
   "git://github.com/tpope/vim-speeddating",
+  'git://github.com/plasticboy/vim-markdown.git',
   "git://github.com/chrismetcalf/vim-yankring.git",
   "git://github.com/chrismetcalf/vim-taglist.git",
   "git://github.com/tpope/vim-endwise.git",
@@ -31,7 +32,8 @@ git_bundles = [
 
   "git://github.com/clones/vim-fuzzyfinder.git",
 
-  "git://github.com/godlygeek/tabular.git"
+  "git://github.com/godlygeek/tabular.git",
+  'git://github.com/skammer/vim-css-color.git'
 ]
 
 vim_org_scripts = [
