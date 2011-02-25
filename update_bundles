@@ -8,6 +8,7 @@ git_bundles = [
   "git://github.com/tpope/vim-haml.git",
   "git://github.com/tpope/vim-cucumber.git",
   "git://github.com/tpope/vim-speeddating",
+  'git://github.com/plasticboy/vim-markdown.git',
   "git://github.com/chrismetcalf/vim-yankring.git",
   "git://github.com/chrismetcalf/vim-taglist.git",
   "git://github.com/tpope/vim-endwise.git",
@@ -16,8 +17,6 @@ git_bundles = [
   "git://github.com/codegram/vim-todo.git",
   "git://github.com/codegram/vim-numberlock.git",
 
-  # "git://github.com/mileszs/apidock.vim.git",
-  
   "git://github.com/Townk/vim-autoclose.git",
 
   "git://github.com/scrooloose/nerdtree.git",
@@ -32,12 +31,9 @@ git_bundles = [
   "git://github.com/clones/vim-fuzzyfinder.git",
 
   "git://github.com/godlygeek/tabular.git",
-
-  # "git://github.com/fousa/vim-flog.git",
-
-  "git://github.com/vim-scripts/L9.git",
-
-  "git://github.com/vim-scripts/Gist.vim.git"
+  'git://github.com/skammer/vim-css-color.git',
+  "git://github.com/vim-scripts/Gist.vim.git",
+  "git://github.com/vim-scripts/L9.git"
 ]
 
 vim_org_scripts = [
