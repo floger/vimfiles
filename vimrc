@@ -233,3 +233,6 @@ if exists(":Tab")
 endif
 
 let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+" Press F5 to toggle GUndo tree
+nnoremap <F5> :GundoToggle<CR>
