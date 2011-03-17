@@ -31,7 +31,7 @@ git_bundles = [
   "git://github.com/clones/vim-fuzzyfinder.git",
 
   "git://github.com/godlygeek/tabular.git",
-  'git://github.com/skammer/vim-css-color.git',
+  'git://github.com/bbommarito/vim-slim.git',
   "git://github.com/vim-scripts/Gist.vim.git",
   "git://github.com/vim-scripts/L9.git"
 ]
