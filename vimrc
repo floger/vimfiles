@@ -31,7 +31,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set number
-set relativenumber
+" set relativenumber
 " set undofile  Enable 7.3 undo in saved files
 
 set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v][%{fugitive#statusline()}]
