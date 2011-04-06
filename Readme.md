@@ -57,6 +57,7 @@ In your home directory:
 * [Fugitive](https://github.com/tpope/vim-fugitive)
 * [FuzzyFinder](https://github.com/clones/vim-fuzzyfinder)
 * [Gist](http://www.vim.org/scripts/script.php?script_id=2423)
+* [Gundo](http://github.com/sjl/gundo.vim.git)
 * [Haml](https://github.com/tpope/vim-haml)
 * [Markdown syntax](https://github.com/plasticboy/vim-markdown)
 * [Nerdtree](https://github.com/scrooloose/nerdtree)
