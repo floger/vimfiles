@@ -1,7 +1,3 @@
-" Essentials
-filetype off
-filetype plugin indent on
-
 set nocompatible
 
 set modelines=0
@@ -236,3 +232,8 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " Press F5 to toggle GUndo tree
 nnoremap <F5> :GundoToggle<CR>
+
+" Essentials
+filetype off
+filetype plugin indent on
+
