@@ -147,7 +147,6 @@ set iskeyword-=_
 
 " EXTERNAL COPY / PASTE "
 set pastetoggle=<F2>
-map <C-v> "+gP<CR>
 vmap <C-c> "+y
 
 " PLUGINS "
