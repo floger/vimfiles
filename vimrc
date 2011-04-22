@@ -199,9 +199,9 @@ if has("gui_running")
   set guioptions-=b " no scrollbar on the bottom
   set guioptions=aiA 
   set mouse=v
-  set guifont=DejaVu\ Sans\ Mono\ 12 "<- Maybe a good idea when using mac
+  set guifont=DejaVu\ Sans\ Mono\ 14 "<- Maybe a good idea when using mac
 endif
-set guifont=DejaVu\ Sans\ Mono\ 12
+set guifont=DejaVu\ Sans\ Mono\ 14
 
 " Finally, load custom configs
 if filereadable(my_home . '.vimrc.local')
