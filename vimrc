@@ -1,7 +1,3 @@
-" Essentials
-filetype off
-filetype plugin indent on
-
 set nocompatible
 
 set modelines=0
@@ -147,7 +143,6 @@ set iskeyword-=_
 
 " EXTERNAL COPY / PASTE "
 set pastetoggle=<F2>
-map <C-v> "+gP<CR>
 vmap <C-c> "+y
 
 " PLUGINS "
@@ -236,3 +231,8 @@ let g:cssColorVimDoNotMessMyUpdatetime = 1
 
 " Press F5 to toggle GUndo tree
 nnoremap <F5> :GundoToggle<CR>
+
+" Essentials
+filetype off
+filetype plugin indent on
+
