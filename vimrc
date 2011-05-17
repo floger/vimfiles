@@ -228,3 +228,5 @@ nnoremap <F5> :GundoToggle<CR>
 filetype off
 filetype plugin indent on
 
+" Autocompile Coffeescript files on save
+autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -c <afile>
