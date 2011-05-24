@@ -175,14 +175,7 @@ map <S-r> :w !ruby<CR>
 
 let my_home = expand("$HOME/")
 
-<<<<<<< HEAD
-if filereadable(my_home . '.vim/bundle/vim-autocorrect/autocorrect.vim')
-  source ~/.vim/bundle/vim-autocorrect/autocorrect.vim
-endif
-
 set t_Co=256
-=======
->>>>>>> ee2b0eed1c25d588ce2410768e742b58822f1df7
 " colorscheme af
 " colorscheme oceanblack
 " colorscheme skittles_dark
