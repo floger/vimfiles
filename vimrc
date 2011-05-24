@@ -30,7 +30,7 @@ set number
 " set relativenumber
 " set undofile  Enable 7.3 undo in saved files
 
-set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v][%{fugitive#statusline()}]
+set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v] "[%{fugitive#statusline()}]
 "              | | | | |  |   |      |  |     |    |
 "              | | | | |  |   |      |  |     |    + current
 "              | | | | |  |   |      |  |     |       column
@@ -133,17 +133,18 @@ nmap <leader><Esc> :q!<CR>
 
 
 " Set the tag file search order
-set tags=./tags;
-let Tlist_WinWidth = 60
-" Use only current file to autocomplete from tags
-set complete=.,t
+" set tags=./tags;
+" let Tlist_WinWidth = 60
+" " Use only current file to autocomplete from tags
+" set complete=.,t
   
-" Use _ as a word-separator
-set iskeyword-=_
+" DO NOT Use _ as a word-separator
+" set iskeyword-=_
 
 " EXTERNAL COPY / PASTE "
 set pastetoggle=<F2>
-vmap <C-c> "+y
+"    paste:   "+gP
+"    copy:    "+y
 
 " PLUGINS "
 
@@ -162,10 +163,6 @@ map <leader>p :NERDTreeToggle<cr>
 " PeepOpen
 map <leader>o <Plug>PeepOpen
 
-" TagList
-map <leader>l :TlistToggle <cr>
-let Tlist_Use_Right_Window = 1
-
 " Buffer window
 nmap <silent> <leader>b :FufBuffer<CR>
 
@@ -178,11 +175,14 @@ map <S-r> :w !ruby<CR>
 
 let my_home = expand("$HOME/")
 
+<<<<<<< HEAD
 if filereadable(my_home . '.vim/bundle/vim-autocorrect/autocorrect.vim')
   source ~/.vim/bundle/vim-autocorrect/autocorrect.vim
 endif
 
 set t_Co=256
+=======
+>>>>>>> ee2b0eed1c25d588ce2410768e742b58822f1df7
 " colorscheme af
 " colorscheme oceanblack
 " colorscheme skittles_dark
@@ -203,7 +203,6 @@ if has("gui_running")
 endif
 set guifont=Monaco:h12
 
-" NOW SERIOUSLY
 set nobackup
 set nowritebackup
 set noswapfile
@@ -234,3 +233,5 @@ if filereadable(my_home . '.vimrc.local')
   source ~/.vimrc.local
 endif
 
+" Autocompile Coffeescript files on save
+autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -c <afile>
