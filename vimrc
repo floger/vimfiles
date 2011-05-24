@@ -182,6 +182,7 @@ if filereadable(my_home . '.vim/bundle/vim-autocorrect/autocorrect.vim')
   source ~/.vim/bundle/vim-autocorrect/autocorrect.vim
 endif
 
+set t_Co=256
 " colorscheme af
 " colorscheme oceanblack
 " colorscheme skittles_dark
@@ -189,7 +190,6 @@ endif
 " colorscheme mustang
 " colorscheme clouds_midnight
 colorscheme molokai
-
 " GUI "
 if has("gui_running")
   set guioptions-=T " no toolbar set guioptions-=m " no menus
@@ -202,11 +202,6 @@ if has("gui_running")
   set guifont=Monaco:h12 "<- Maybe a good idea when using mac
 endif
 set guifont=Monaco:h12
-
-" Finally, load custom configs
-if filereadable(my_home . '.vimrc.local')
-  source ~/.vimrc.local
-endif
 
 " NOW SERIOUSLY
 set nobackup
@@ -227,12 +222,15 @@ if exists(":Tab")
   vmap <leader>a: :Tab /:\zs<CR>
 endif
 
-let g:cssColorVimDoNotMessMyUpdatetime = 1
-
 " Press F5 to toggle GUndo tree
 nnoremap <F5> :GundoToggle<CR>
 
 " Essentials
 filetype off
 filetype plugin indent on
+
+" Finally, load custom configs
+if filereadable(my_home . '.vimrc.local')
+  source ~/.vimrc.local
+endif
 
