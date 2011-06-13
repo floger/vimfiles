@@ -45,7 +45,7 @@ set statusline=%F%m%r%h%w[%L]%y[%p%%][%04v] "[%{fugitive#statusline()}]
 "              | | +-- readonly flag in square brackets
 "              | +-- rodified flag in square brackets
 "              +-- full path to file in the rbuffer
-"} 
+"}
 
 " <leader> key
 let mapleader = ","
@@ -99,7 +99,7 @@ nnoremap ; :
 set grepprg=ack
 
 " ,a to Ack
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ack
 
 " Rotating among results in an ack search
 map <C-n> :cn<CR>
@@ -137,7 +137,7 @@ nmap <leader><Esc> :q!<CR>
 " let Tlist_WinWidth = 60
 " " Use only current file to autocomplete from tags
 " set complete=.,t
-  
+
 " DO NOT Use _ as a word-separator
 " set iskeyword-=_
 
@@ -149,7 +149,7 @@ set pastetoggle=<F2>
 " PLUGINS "
 
 " Load all bundles in .vim/bundles
-call pathogen#runtime_append_all_bundles() 
+call pathogen#runtime_append_all_bundles()
 
 " NERDTree
 let NERDTreeShowBookmarks = 1
@@ -157,7 +157,7 @@ let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 let NERDTreeHijackNetrw = 1
 let NERDTreeQuitOnOpen = 1
-let NERDTreeWinSize = 50 
+let NERDTreeWinSize = 50
 map <leader>p :NERDTreeToggle<cr>
 
 " PeepOpen
@@ -167,8 +167,8 @@ map <leader>o <Plug>PeepOpen
 nmap <silent> <leader>b :FufBuffer<CR>
 
 " AutoClose
-let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'} 
-let g:AutoCloseProtectedRegions = ["Character"] 
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}'}
+let g:AutoCloseProtectedRegions = ["Character"]
 
 " Execute current buffer as ruby
 map <S-r> :w !ruby<CR>
@@ -190,7 +190,7 @@ if has("gui_running")
   set guioptions-=R " no scrollbar on the right
   set guioptions-=l " no scrollbar on the left
   set guioptions-=b " no scrollbar on the bottom
-  set guioptions=aiA 
+  set guioptions=aiA
   set mouse=v
   set guifont=Monaco:h12 "<- Maybe a good idea when using mac
 endif
@@ -228,3 +228,6 @@ endif
 
 " Autocompile Coffeescript files on save
 autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -c <afile>
+
+" Autodelte trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
