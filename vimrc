@@ -231,3 +231,6 @@ autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -c <afile>
 
 " Autodelte trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Generate markdown preview
+map <F8> :w!<CR>:!markdown % \| smartypants > %.html && open %.html<CR><CR>
