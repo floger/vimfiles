@@ -67,9 +67,10 @@ nnoremap <leader><space> :noh<cr>
 
 " Handle long lines correctly
 set wrap
-" set textwidth=79
-" set formatoptions=n
-" set colorcolumn=80
+set textwidth=80
+set formatoptions=n
+set colorcolumn=80
+set tw=80
 
 " Show invisible characters
 " set list
