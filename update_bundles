@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-git_bundles = [ 
+git_bundles = [
   "git://github.com/mileszs/ack.vim.git",
   # "git://github.com/tpope/vim-fugitive",
   # "git://github.com/tpope/vim-rails.git",
@@ -29,12 +29,12 @@ git_bundles = [
 
   # "git://github.com/sjl/gundo.vim.git",
 
-  # "git://github.com/clones/vim-fuzzyfinder.git",
+  "git://github.com/vim-scripts/L9.git",
+  "git://github.com/clones/vim-fuzzyfinder.git",
 
   "git://github.com/godlygeek/tabular.git",
   'git://github.com/bbommarito/vim-slim.git',
   # "git://github.com/vim-scripts/Gist.vim.git",
-  # "git://github.com/vim-scripts/L9.git",
 
   "git://github.com/kchmck/vim-coffee-script.git",
   "git://github.com/altercation/vim-colors-solarized.git",
@@ -73,7 +73,7 @@ vim_org_scripts.each do |name, script_id, script_type|
       puts file.inspect
     end
     puts a.inspect
-    next  
+    next
   end
   if script_type == 'zip'
     local_file = File.join(name, "#{name}.zip")
