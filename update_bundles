@@ -38,6 +38,7 @@ git_bundles = [
 
   "git://github.com/kchmck/vim-coffee-script.git",
   "git://github.com/altercation/vim-colors-solarized.git",
+  "git://github.com/vim-scripts/bufkill.vim.git"
 ]
 
 vim_org_scripts = [
