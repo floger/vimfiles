@@ -47,6 +47,8 @@ In your home directory:
 * **,l** => Tag list
 * **,o** => PeepOpen
 * **,p** => Nerd tree
+* **,R** => RbREPL
+
 
 ##Plugins
 * [Ack (instead of grep)](https://github.com/mileszs/ack.vim)
@@ -62,9 +64,10 @@ In your home directory:
 * [Markdown syntax](https://github.com/plasticboy/vim-markdown)
 * [Nerdtree](https://github.com/scrooloose/nerdtree)
 * [Numberlock](https://github.com/codegram/vim-numberlock)
-* [Pathogen](https://github.com/tpope/vim-pathogen) 
+* [Pathogen](https://github.com/tpope/vim-pathogen)
 * [Peepopen](http://peepcode.com/products/peepopen)
 * [Rails](https://github.com/tpope/vim-rails)
+* [RbREPL](https://github.com/Bogdanp/rbrepl.vim)
 * [Slim](https://github.com/bbommarito/vim-slim)
 * [Snipmate](https://github.com/msanders/snipmate.vim)
 * [Sparkup](https://github.com/rstacruz/sparkup)
