@@ -326,3 +326,7 @@ endfunction
 
 " Map this feature to the key sequence ',p' (comma lowercase-p)
 map <F8> :call PreviewMarkdown()<CR>
+
+" Settings for VimClojure
+let vimclojure#HighlightBuiltins = 1 " Highlight Clojure's builtins
+let vimclojure#ParenRainbow = 1      " Rainbow parentheses'!
