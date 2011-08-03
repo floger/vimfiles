@@ -10,6 +10,7 @@ set expandtab
 
 " Fancy things in 7.3
 
+set fencs=utf-8,gbk
 set title
 set encoding=utf-8
 set scrolloff=3
