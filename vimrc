@@ -152,6 +152,15 @@ set pastetoggle=<F2>
 " Load all bundles in .vim/bundles
 call pathogen#runtime_append_all_bundles()
 
+-" NERDTree
+let NERDTreeShowBookmarks = 1
+let NERDChristmasTree = 1
+let NERDTreeWinPos = "left"
+let NERDTreeHijackNetrw = 1
+let NERDTreeQuitOnOpen = 1
+let NERDTreeWinSize = 50
+map <leader>p :NERDTreeToggle<cr>
+
 " CommandT
 map <leader>o :CommandT<CR>
 
