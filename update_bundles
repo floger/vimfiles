@@ -19,13 +19,14 @@ git_bundles = [
   "git://github.com/Townk/vim-autoclose.git",
 
   "git://github.com/scrooloose/nerdtree.git",
+  "git://github.com/wincent/Command-T.git",
   # "git://github.com/rstacruz/sparkup.git",
 
   # "git://github.com/panozzaj/vim-autocorrect.git",
 
   "git://github.com/tsaleh/vim-tcomment.git",
 
-  "git://github.com/shemerey/vim-peepopen.git",
+  # "git://github.com/shemerey/vim-peepopen.git",
 
   # "git://github.com/sjl/gundo.vim.git",
 
@@ -96,3 +97,9 @@ vim_org_scripts.each do |name, script_id, script_type|
     FileUtils.cd('..')
   end
 end
+
+# Compile CommandT
+
+puts 'Compiling CommandT...'
+`pwd && cd Command-T && rake make`
+puts 'Compiled!'

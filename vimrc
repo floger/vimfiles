@@ -152,17 +152,8 @@ set pastetoggle=<F2>
 " Load all bundles in .vim/bundles
 call pathogen#runtime_append_all_bundles()
 
-" NERDTree
-let NERDTreeShowBookmarks = 1
-let NERDChristmasTree = 1
-let NERDTreeWinPos = "left"
-let NERDTreeHijackNetrw = 1
-let NERDTreeQuitOnOpen = 1
-let NERDTreeWinSize = 50
-map <leader>p :NERDTreeToggle<cr>
-
-" PeepOpen
-map <leader>o <Plug>PeepOpen
+" CommandT
+map <leader>o :CommandT<CR>
 
 " Buffer window
 nmap <silent> <leader>b :FufBuffer<CR>
@@ -330,3 +321,68 @@ map <F8> :call PreviewMarkdown()<CR>
 " Settings for VimClojure
 let vimclojure#HighlightBuiltins = 1 " Highlight Clojure's builtins
 let vimclojure#ParenRainbow = 1      " Rainbow parentheses'!
+
+" RUNNING TESTS (from Gary Bernhardt's vimfiles)
+
+function! RunTests(filename)
+    " Write the file and run tests for the given filename
+    :w
+    :silent !echo;echo;echo;echo;echo
+    if filereadable("script/test")
+        exec ":!script/test " . a:filename
+    else
+        exec ":!/usr/local/rvm/rubies/ruby-1.9.2-p290/bin/ruby " . a:filename
+    end
+endfunction
+
+function! SetTestFile()
+    " Set the spec file that tests will be run for.
+    let t:grb_test_file=@%
+endfunction
+
+function! RunTestFile(...)
+    if a:0
+        let command_suffix = a:1
+    else
+        let command_suffix = ""
+    endif
+
+    " Run the tests for the previously-marked file.
+    let in_spec_file = match(expand("%"), '_spec.rb$') != -1
+    if in_spec_file
+        call SetTestFile()
+    elseif !exists("t:grb_test_file")
+        return
+    end
+    call RunTests(t:grb_test_file . command_suffix)
+endfunction
+
+function! RunNearestTest()
+    let spec_line_number = line('.')
+    call RunTestFile(":" . spec_line_number)
+endfunction
+
+map <leader>t :call RunTestFile()<cr>
+map <leader>T :call RunNearestTest()<cr>
+map <leader>a :call RunTests('spec')<cr>
+map <leader>c :w\|:!bundle exec cucumber<cr>
+map <leader>C :w\|:!bundle exec cucumber --tags=@wip<cr>
+
+" GRB: Put useful info in status line
+:set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+:hi User1 term=inverse,bold cterm=inverse,bold ctermfg=red
+
+" Remap the tab key to do autocompletion or indentation depending on the
+" context (from http://www.vim.org/tips/tip.php?tip_id=102)
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
+
+nnoremap <leader><leader> <c-^>
