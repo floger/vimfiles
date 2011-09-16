@@ -163,6 +163,7 @@ map <leader>p :NERDTreeToggle<cr>
 
 " CommandT
 map <leader>o :CommandT<CR>
+:set wildignore+=*.o,*.obj,.git,tmp,*.png,*.jpg,*.svg,*.ttf,*.doc,*.pdf,*.gif,*.gz,*.xls,*.rbc
 
 " Buffer window
 nmap <silent> <leader>b :FufBuffer<CR>
@@ -373,7 +374,7 @@ endfunction
 
 map <leader>t :call RunTestFile()<cr>
 map <leader>T :call RunNearestTest()<cr>
-map <leader>a :call RunTests('spec')<cr>
+" map <leader>a :call RunTests('spec')<cr>
 map <leader>c :w\|:!bundle exec cucumber<cr>
 map <leader>C :w\|:!bundle exec cucumber --tags=@wip<cr>
 
