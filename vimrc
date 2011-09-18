@@ -163,8 +163,8 @@ let NERDTreeWinSize = 50
 map <leader>p :NERDTreeToggle<cr>
 
 " CommandT
-map <leader>o :CommandT<CR>
-:set wildignore+=*.o,*.obj,.git,tmp,*.png,*.jpg,*.svg,*.ttf,*.doc,*.pdf,*.gif,*.gz,*.xls,*.rbc
+" map <leader>o :CommandT<CR>
+" :set wildignore+=*.o,*.obj,.git,tmp,*.png,*.jpg,*.svg,*.ttf,*.doc,*.pdf,*.gif,*.gz,*.xls,*.rbc
 
 " Buffer window
 nmap <silent> <leader>b :FufBuffer<CR>

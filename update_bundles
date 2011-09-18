@@ -19,7 +19,7 @@ git_bundles = [
   "git://github.com/Townk/vim-autoclose.git",
 
   "git://github.com/scrooloose/nerdtree.git",
-  "git://github.com/wincent/Command-T.git",
+  # "git://github.com/wincent/Command-T.git",
   # "git://github.com/rstacruz/sparkup.git",
 
   # "git://github.com/panozzaj/vim-autocorrect.git",
@@ -100,6 +100,6 @@ end
 
 # Compile CommandT
 
-puts 'Compiling CommandT...'
-`pwd && cd Command-T && rake make`
-puts 'Compiled!'
+# puts 'Compiling CommandT...'
+# `pwd && cd Command-T && rake make`
+# puts 'Compiled!'
