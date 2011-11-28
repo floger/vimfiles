@@ -228,9 +228,6 @@ if filereadable(my_home . '.vimrc.local')
   source ~/.vimrc.local
 endif
 
-" Autocompile Coffeescript files on save
-autocmd BufWritePost,FileWritePost *.coffee :silent !coffee -c <afile>
-
 " Autodelte trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 "
