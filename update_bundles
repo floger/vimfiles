@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
 
 git_bundles = [
-  "git://github.com/nathanaelkane/vim-indent-guides.git",
   "git://github.com/mileszs/ack.vim.git",
   # "git://github.com/tpope/vim-fugitive",
-  "git://github.com/tpope/vim-rails.git",
+  # "git://github.com/tpope/vim-rails.git",
   "git://github.com/tpope/vim-surround.git",
   "git://github.com/tpope/vim-cucumber.git",
   # "git://github.com/tpope/vim-speeddating",
@@ -20,12 +19,12 @@ git_bundles = [
   "git://github.com/Townk/vim-autoclose.git",
 
   "git://github.com/scrooloose/nerdtree.git",
-  # "git://github.com/wincent/Command-T.git",
+  "git://github.com/wincent/Command-T.git",
   # "git://github.com/rstacruz/sparkup.git",
 
   # "git://github.com/panozzaj/vim-autocorrect.git",
 
-  "git://github.com/tsaleh/vim-tcomment.git",
+  "git://github.com/jmartindf/vim-tcomment.git",
 
   # "git://github.com/shemerey/vim-peepopen.git",
 
@@ -44,7 +43,8 @@ git_bundles = [
   "git://github.com/vim-scripts/bufkill.vim.git",
   "git://github.com/Bogdanp/rbrepl.vim.git",
 
-  "git://github.com/vim-scripts/VimClojure.git"
+  "git://github.com/vim-scripts/VimClojure.git",
+  "git://github.com/hallettj/jslint.vim.git",
 ]
 
 vim_org_scripts = [
@@ -67,6 +67,10 @@ git_bundles.each do |url|
   `git clone #{url} #{dir}`
   FileUtils.rm_rf(File.join(dir, ".git"))
 end
+
+puts 'Updating submodules...'
+`git submodule init`
+`git submodule update`
 
 vim_org_scripts.each do |name, script_id, script_type|
   puts "  Downloading #{name}"
@@ -101,6 +105,10 @@ end
 
 # Compile CommandT
 
-# puts 'Compiling CommandT...'
-# `pwd && cd Command-T && rake make`
-# puts 'Compiled!'
+puts 'Compiling CommandT...'
+`pwd && cd Command-T && rake make`
+puts 'Compiled!'
+
+puts 'Installing JSLint...'
+`pwd && cd jslint.vim && rake install`
+puts 'Installed!'

@@ -163,8 +163,8 @@ let NERDTreeWinSize = 50
 map <leader>p :NERDTreeToggle<cr>
 
 " CommandT
-" map <leader>o :CommandT<CR>
-" :set wildignore+=*.o,*.obj,.git,tmp,*.png,*.jpg,*.svg,*.ttf,*.doc,*.pdf,*.gif,*.gz,*.xls,*.rbc
+map <leader>o :CommandT<CR>
+:set wildignore+=*.o,*.obj,.git,tmp,*.png,*.jpg,*.svg,*.ttf,*.doc,*.pdf,*.gif,*.gz,*.xls,*.rbc
 
 " Buffer window
 nmap <silent> <leader>b :FufBuffer<CR>
@@ -174,7 +174,7 @@ let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': 
 let g:AutoCloseProtectedRegions = ["Character"]
 
 " Execute current buffer as ruby
-map <S-r> :w !ruby<CR>
+map <leader>r :!rb %<cr>
 
 let my_home = expand("$HOME/")
 
@@ -185,7 +185,8 @@ set t_Co=256
 " colorscheme twilight
 " colorscheme mustang
 " colorscheme clouds_midnight
-colorscheme molokai
+" colorscheme molokai
+ colorscheme  Tomorrow-Night
 " GUI "
 if has("gui_running")
   set guioptions-=T " no toolbar set guioptions-=m " no menus
@@ -395,3 +396,10 @@ inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
 nnoremap <leader><leader> <c-^>
+
+set clipboard+=unnamed " Use system clipboard as default register"
+
+" Use Node.js for JavaScript interpretation
+let $JS_CMD='node'
+let g:JSLintHighlightErrorLine = 0
+nnoremap <leader>js :copen<cr>
