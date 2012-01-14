@@ -185,8 +185,7 @@ set t_Co=256
 " colorscheme twilight
 " colorscheme mustang
 " colorscheme clouds_midnight
-" colorscheme molokai
- colorscheme  Tomorrow-Night
+ colorscheme molokai
 " GUI "
 if has("gui_running")
   set guioptions-=T " no toolbar set guioptions-=m " no menus
