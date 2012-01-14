@@ -1,13 +1,13 @@
 # vimfiles
 
-The vimfiles we use at Codegram. Best vim config ever :)
+The vimfiles all adopted from Codegram. all tuning for fedora user.
 
 Ready for VIM 7.3!
 
 ##Installation
 In your home directory:
 
-    git clone https://github.com/codegram/vimfiles.git .vim
+    git clone https://github.com/xiaods/vimfiles.git .vim
 
     sh .vim/install.sh
 
@@ -97,7 +97,7 @@ In your home directory:
 * Move cursor by display lines instead of physical (j => gj)
 * Autosave on lose focus
 * _ is a word separator
-* Font is Monaco 12
+* Font is DejaVu Sans Mono,14
 
 ### TODO
 * Better description
