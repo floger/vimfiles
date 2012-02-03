@@ -1,6 +1,6 @@
 # vimfiles
 
-The vimfiles all adopted from Codegram. all tuning for fedora user.
+The vimfiles all adopted from Codegram. all tuning for Fedora 16.
 
 Ready for VIM 7.3!
 
@@ -36,6 +36,7 @@ In your home directory:
 ###Insert mode
 * **jj** => Back to normal mode
 
+
 ###Plugins related
 * **,a** => Ack search
 * **,a|** => Align Cucumber Tables
@@ -48,6 +49,7 @@ In your home directory:
 * **,o** => PeepOpen
 * **,p** => Nerd tree
 * **,R** => RbREPL
+* **Control + n** toggle relative number/absolute number
 
 
 ##Plugins
@@ -79,6 +81,7 @@ In your home directory:
 * [TComment](https://github.com/tsaleh/vim-tcomment)
 * [Todo](https://github.com/codegram/vim-todo)
 * [Yankring](https://github.com/chrismetcalf/vim-yankring)
+* [numbertoggle](https://github.com/jeffkreeftmeijer/vim-numbertoggle)
 
 
 ##Colorschemes
@@ -97,7 +100,7 @@ In your home directory:
 * Move cursor by display lines instead of physical (j => gj)
 * Autosave on lose focus
 * _ is a word separator
-* Font is DejaVu Sans Mono,14
+* Font is Bitstream\ Vera\ Sans\ Mono\ 13
 
 ### TODO
 * Better description
